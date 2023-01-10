@@ -91,8 +91,12 @@ let friends = [
     }
 ]
 
-let namn = Object.keys(friends);
-console.log(namn);
+friends.forEach(friend => {
+    console.log(friend.name + ' likes: ');
+    friend.likes.forEach(like => {
+        console.log(like);
+    })
+})
 
 
 
