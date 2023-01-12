@@ -27,20 +27,21 @@ for (let i = 0; i < fruits.length; i++) {
 //6
 let things = ['hammer', 'nails', 'ruler', 'srewdriver', 'screws', 'saw'];
 
-for(let x of things) {
-    console.log(x);
+for(let thing of things) {
+    console.log(thing);
 }
 
 //FOR EACH LOOPS
 
 //7
-things.forEach(function(thing) {
+things.forEach((thing) => {
     console.log(thing);
 })
 
 //8
-things.forEach(function(thing, index) {
-    console.log(`${thing} has index ${index}`);
+let index = 0;
+things.forEach(function(thing) {
+    console.log(index + '. ' + thing);
 })
 
 //WHILE LOOPS
